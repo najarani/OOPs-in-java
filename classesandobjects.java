@@ -20,5 +20,8 @@ public class classesandobjects{
        pen1.type = "Ball";
        pen.printColor();
        pen1.printColor();
+       Pen pen2 = new Pen();
+       pen2.color = "Green";
+       pen2.type = "Ink";
     }
 }
