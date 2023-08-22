@@ -18,14 +18,21 @@ class Student{
         System.out.println(this.name);
         System.out.println(this.age);
     }
-    Student(String name, int age){
-        this.age = age;
-        this.name = name;
+   
+    Student(Student s2){
+        this.name = s2.name;
+        this.age = s2.age;
+    }
+    Student(){
+
     }
 }
 public class classesandobjects{
     public static void main(String[] args) {
-       Student s1 = new Student("Nirajan",22);
-       s1.printInfo();
+       Student s1 = new Student();
+       s1.name= "nirajan";
+       s1.age = 22;
+       Student s2 = new Student(s1);
+       s2.printInfo();
     }
 }
