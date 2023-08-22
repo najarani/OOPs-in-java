@@ -12,19 +12,16 @@ class Pen{
 class Student{
     String name;
     int age;
-
-
-    public void printInfo(){
-        System.out.println(this.name);
-        System.out.println(this.age);
+//function overloading
+    public void printInfo(String name){
+        System.out.println(name);
     }
-   
-    Student(Student s2){
-        this.name = s2.name;
-        this.age = s2.age;
+    public void printInfo(int age){
+        System.out.println(age);
     }
-    Student(){
-
+    public void printInfo(String name, int age){
+        System.out.println(name);
+        System.out.println(age);
     }
 }
 public class classesandobjects{
@@ -32,7 +29,6 @@ public class classesandobjects{
        Student s1 = new Student();
        s1.name= "nirajan";
        s1.age = 22;
-       Student s2 = new Student(s1);
-       s2.printInfo();
+      s1.printInfo(s1.name,s1.age);
     }
 }
