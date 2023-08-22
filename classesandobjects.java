@@ -8,20 +8,24 @@ class Pen{
     public void printColor(){
         System.out.println(this.color);
     }
-}
+} 
+class Student{
+    String name;
+    int age;
 
+
+    public void printInfo(){
+        System.out.println(this.name);
+        System.out.println(this.age);
+    }
+    Student(String name, int age){
+        this.age = age;
+        this.name = name;
+    }
+}
 public class classesandobjects{
     public static void main(String[] args) {
-       Pen pen = new Pen();
-       pen.color= "blue";
-       pen.type ="gel";
-       Pen pen1 = new Pen();
-       pen1.color = "Red";
-       pen1.type = "Ball";
-       pen.printColor();
-       pen1.printColor();
-       Pen pen2 = new Pen();
-       pen2.color = "Green";
-       pen2.type = "Ink";
+       Student s1 = new Student("Nirajan",22);
+       s1.printInfo();
     }
 }
