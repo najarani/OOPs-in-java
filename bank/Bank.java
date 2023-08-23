@@ -17,7 +17,7 @@ public static void main(String[] args) {
     Account accoun1 = new Account();
     accoun1.name = "Nirajan Poudel";
     accoun1.email = "nirajan@gamil.com";
-    accoun1.setPassword("Nirajan");
+
     System.out.println(accoun1.getPassword());
 }
 }
