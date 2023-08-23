@@ -1,4 +1,5 @@
 class Shape{
+String color;
     public void area(){
         System.out.println("Displays area");
     }
@@ -23,6 +24,8 @@ class Circle extends Shape{
 }
 public class inheritance {
    public static void main(String[] args) {
-    
+    Circle nirajan = new Circle();
+    nirajan.color = "red";
+    System.out.println(nirajan.color);
    }
 }
